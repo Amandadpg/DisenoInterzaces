@@ -1,0 +1,80 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #0b2545;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+    }
+    header .logo {
+      font-weight: bold;
+      color: #099e18;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100px;
+      height: 50px;  
+    }
+    
+    .banner {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .banner button {
+      background-color: #e67300;
+      border: none;
+      padding: 12px 25px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .banner button:hover {
+      background-color: #cc6600;
+    }
+    /* Bloques */
+    .bloques {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 20px;
+    }
+    .bloques div {
+      background-color: #f4f4f4;
+      padding: 40px;
+      text-align: center;
+      flex: 1;
+      max-width: 250px;
+      border-radius: 5px;
+    }
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+    .imagenes div {
+      background-color: #a1005d;
+      color: white;
+      width: 250px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 5px;
+    }
