@@ -1,6 +1,6 @@
 body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;;
     }
     header {
       background-color: #0b2545;
@@ -10,71 +10,74 @@ body {
       align-items: center;
       padding: 15px 50px;
     }
-    header .logo {
-      font-weight: bold;
-      color: #099e18;
-    }
     nav a {
       color: white;
-      text-decoration: none;
       margin-left: 20px;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
     img {
-      width: 100px;
-      height: 50px;  
+      width: 150px; 
     }
     
-    .banner {
-      background-color: green;
-      color: white;
+    .bloque1 {
+      background-color: #099e18;
+      font-family: 'Oswald', sans-serif;
+      color: #099e18;
+      font-weight: bold;
       text-align: center;
       padding: 60px 20px;
+      background: url("imagenes/imagen3.jpg");
+      background-size: cover; 
+      padding: 100px 20px; 
     }
-    .banner button {
-      background-color: #e67300;
+    .bloque1 button {
+      background-color: #CC660C;
       border: none;
       padding: 12px 25px;
       color: white;
       font-size: 16px;
-      cursor: pointer;
       margin-top: 15px;
     }
-    .banner button:hover {
-      background-color: #cc6600;
+    .bloque1 img {
+      width: 28px;    
+      height: auto;   
+      object-fit: cover;
     }
-    /* Bloques */
-    .bloques {
+
+    .bloque2 {
       display: flex;
       justify-content: center;
       gap: 20px;
-      padding: 30px 20px;
+      padding: 15px ;
     }
-    .bloques div {
-      background-color: #f4f4f4;
+    .bloque2 h4 {
+      background-color: #c8c7c78d;
+      color: #A6095C;
       padding: 40px;
       text-align: center;
       flex: 1;
-      max-width: 250px;
       border-radius: 5px;
     }
     .imagenes {
       display: flex;
       justify-content: center;
       gap: 40px;
-      padding: 40px 20px;
+      margin-bottom: 20px;
     }
-    .imagenes div {
-      background-color: #a1005d;
+    .imagenes img {
+      background-color: #A6095C;
       color: white;
-      width: 250px;
-      height: 180px;
+      width: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: bold;
       border-radius: 5px;
+    }
+
+    footer {
+      background-color: #0b2545;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
     }
