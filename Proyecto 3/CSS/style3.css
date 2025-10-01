@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+}
+
+.imagenes {
+    width: 98%;
+    padding: auto;                                               
+}
+
+.frame img {
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 10px;
+}

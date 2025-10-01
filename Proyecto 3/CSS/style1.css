@@ -1,0 +1,22 @@
+header {
+    text-align: center;
+}
+
+.imagenes {
+    display: flex;                
+    gap: 20px;                     
+}
+
+.frame  {
+    flex: 1;                                        
+}
+
+.frame img {
+    max-width: 100%;
+}
+
+
+  
+
+  
+

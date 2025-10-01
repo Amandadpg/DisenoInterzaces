@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+}
+
+.imagenes {
+    display: grid;                         
+    grid-template-columns: 50% 50%;                        
+}
+
+.frame {
+    padding: 20px;
+    text-align: center;
+}
+
+.frame img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
