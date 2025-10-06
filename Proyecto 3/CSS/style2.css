@@ -1,19 +1,120 @@
-header {
+body {
+    background-color: #ebf5ee;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera {
+    display: flex;
+    width: 100%; 
+}
+
+.menu {
+    width: 33%;
     text-align: center;
+    padding-top: 50px;
+
 }
 
-.imagenes {
-    display: grid;                         
-    grid-template-columns: 50% 50%;                        
+.menu *{
+    font-size: 30px;
 }
 
-.frame {
-    padding: 20px;
-    text-align: center;
-}
-
-.frame img {
-    max-width: 100%;
+.logo{
+    padding-top: 10px;
+    display: block;
     margin: 0 auto;
 }
 
+.redes {
+    width: 33%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.redes * {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.imagenCompleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.imagenCompleta img {
+  width: 95%;
+  height: auto;
+  display: block; 
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.imagenTexto1 {
+    width: 50%;
+}
+
+.imagenes div {
+  text-align: center;
+  width: 300px;
+}
+
+.imagenes img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.imagenes p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.BloqueTexto {
+  background-color: #78a1bb;
+  padding: 40px;
+  margin: 40px auto;
+  width: 60%;
+  text-align: justify;
+}
+
+.PieDePagina {
+  gap: 20px;
+  background-color: #8b786d;
+  color: #bfa89e;
+  padding: 40px 60px;
+  text-align: center;
+  display: grid;                         
+  grid-template-columns: 50% 50%;
+}
+
+.PieDePagina h3 {
+  margin-bottom: 15px;
+  color: #ebf5ee;
+}
+
+.PieDePagina button {
+  background-color: #bfa89e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+.FirmaPie {
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
+
+.FirmaPie p:nth-child(2) {
+  color: #ff7300;
+}
