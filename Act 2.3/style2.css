@@ -83,103 +83,64 @@ body {
     line-height: 1.6;
 }
 
-/* Añadir al final de style2.css */
-
-/* Botón flotante para abrir el panel */
-#accesibilidad-btn {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background-color: #ff7300;
-    color: white;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 26px;
-    cursor: pointer;
-    z-index: 9999;
+#panelAccesibilidad {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  transform: translateX(100%);
+  color: #e65c00;
 }
 
-#accesibilidad-btn:hover {
-    background-color: #e65c00;
+#panelAccesibilidad.visible {
+  transform: translateX(0);
 }
 
-#panel-accesibilidad {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 280px;
-    height: 100%;
-    background-color: #ffffff;
-    box-shadow: -3px 0 8px rgba(0,0,0,0.2);
-    padding: 25px;
-    transform: translateX(100%);
-    z-index: 9998;
+#panelAccesibilidad button {
+  background-color: #e65c00;     
+  color: white;                  
+  border: none;
+  padding: 8px 18px;
+  margin-bottom: 12px;
+  border-radius: 8px;            
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-#panel-accesibilidad.visible {
-    transform: translateX(0);
-}
-
-#panel-accesibilidad h3 {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 1.2rem;
-}
-
-#panel-accesibilidad button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff7300;
-    color: white;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-#panel-accesibilidad button:hover {
-    background-color: #e65c00;
-}
-
-#panel-accesibilidad.oculto {
-    transform: translateX(100%);
-}
-
-.modo-oscuro {
-    background-color: #121212 ;
-    color: #e0e0e0;
+.modo-oscuro,
+.modo-oscuro .cabecera{
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 .modo-oscuro img,
 .modo-oscuro .bloqueTexto,
 .modo-oscuro .pieDePagina {
-    filter: brightness(0.8);
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
 }
 
 .modo-monocromo {
-    filter: grayscale(100%);
-    background-color: #fff;
-    color: #000 
+  filter: grayscale(100%);
+  background-color: #fff;
+  color: #000;
+  transition: filter 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .modo-contraste {
-    filter: contrast(180%);
+  filter: contrast(180%);
 }
 
 .destacar-enlaces a,
 .destacar-enlaces button {
-    outline: 2px solid #ff7300;
-    box-shadow: 0 0 10px #ff7300;
-    background-color: #fff3e0 ;
-    color: #000 ;
+  outline: 2px solid #ff7300;
+  background-color: #fff3e0;
+  color: #000;
 }
-
 
 .pieDePagina {
     display: grid;

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Página de prueba</title>
+  <style>
+    body {
+      background-color: #eeeeee;
+      font-family: Arial, sans-serif;
+      color: black;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #005599;
+    }
+
+    a:focus {
+      outline: none;
+    }
+
+    main {
+      width: 800px;
+      margin: 20px auto;
+    }
+
+    img{
+      width: 50%;
+    }
+
+    .boton {
+      background-color: #abababfa;
+      color: black;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <img src="banner.png" alt="Foto de una clase">
+
+    <h3>Sobre Nosotros</h3>
+    <p>Somos una empresa dedicada al desarrollo de software accesible y usable.</p>
+
+    <form action="submit.php">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Nombre"><br>
+
+      <label for="correo">Email:</label>
+      <input type="email" id="correo" placeholder="Email"><br><br>
+
+      <button class="boton">Enviar</button><br><br>
+    </form>
+
+    <table border="1">
+      <tr><td>Juan</td><td>Programador</td></tr>
+      <tr><td>Lucía</td><td>Diseñadora</td></tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>Todos los derechos reservados 2025</p>
+  </footer>
+</body>
+</html>

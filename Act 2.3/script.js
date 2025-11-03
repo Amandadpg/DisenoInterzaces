@@ -1,32 +1,35 @@
-document.addEventListener("DOMContentLoaded", function() {
-  let botones = ["#btnOscuro", "#btnMonocromo", "#btnAltoContraste", "#btnEnlaces", "#btnReset"];
-  const body = document.body;
+document.addEventListener("DOMContentLoaded", () => {
 
-  function limpiarModos() {
-    body.className = "";
-  }
+  const iconoAccesibilidad = document.querySelector("#iconoAccesibilidad");
+  const panel = document.querySelector("#panelAccesibilidad");
+  const body = document.querySelector("body");
 
-  botones.forEach(id => {
-    const btn = document.querySelector(id);
-    if (!btn) {
-      console.error("No encontrado:", id);
-      return;
-    }
-    btn.addEventListener("click", () => {
-      limpiarModos();
-      if (id !== "#btnReset") {
-        body.classList.add(id.substring(1)); // Agrega clase quitando '#'
-      }
-    });
+  iconoAccesibilidad.addEventListener("click", () => {
+    panel.classList.toggle("visible");
   });
 
-  // Mostrar u ocultar panel accesibilidad (opcional)
-  const btnMostrarPanel = document.getElementById("accesibilidad-btn");
-  const panel = document.getElementById("panel-accesibilidad");
-  if (btnMostrarPanel && panel) {
-    btnMostrarPanel.addEventListener("click", () => {
-      panel.classList.toggle("visible");
-      panel.classList.toggle("oculto");
-    });
-  }
+  document.querySelector("#botonOscuro").addEventListener("click", () => {
+    body.classList.remove("modo-monocromo", "modo-contraste", "destacar-enlaces");
+    body.classList.toggle("modo-oscuro");
+  });
+
+  document.querySelector("#botonMonocromo").addEventListener("click", () => {
+    body.classList.remove("modo-oscuro", "modo-contraste", "destacar-enlaces");
+    body.classList.add("modo-monocromo");
+  });
+
+  document.querySelector("#botonAltoContraste").addEventListener("click", () => {
+    body.classList.remove("modo-oscuro", "modo-monocromo", "destacar-enlaces");
+    body.classList.add("modo-contraste");
+  });
+
+  document.querySelector("#botonEnlaces").addEventListener("click", () => {
+    body.classList.remove("modo-oscuro", "modo-monocromo", "modo-contraste");
+    body.classList.add("destacar-enlaces");
+  });
+
+  document.querySelector("#botonReset").addEventListener("click", () => {
+    body.className = "";
+  });
+
 });
