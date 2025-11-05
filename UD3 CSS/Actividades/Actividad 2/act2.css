@@ -1,0 +1,35 @@
+/*Al encabezado se le asigna un color negro de fondo, color blanco de letra y cursiva.
+Al pie se le asigna un color de fondo violeta y se convierte el texto a mayúsculas.
+A la última columna se le pone el texto en negrita y centrado.
+A las filas impares del cuerpo de la tabla se les asigna un color de fondo agua marina.
+A las filas pares del cuerpo de la tabla se les asigna un color de fondo beige.
+*/
+
+thead tr  {
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+tfoot tr {
+    background-color: blueviolet;
+    color: white;
+    text-transform: uppercase;
+}
+
+tbody tr td:last-child{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: aquamarine;
+}
+
+tbody tr:nth-child(even) {
+    background-color: beige;
+}
+
+
+
