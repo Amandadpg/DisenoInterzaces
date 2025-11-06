@@ -1,0 +1,30 @@
+h2{
+   color: aquamarine; 
+}
+
+#principal article:first-child h2 {
+    color: blueviolet;
+}
+
+#secundario article:last-child h2{
+    color: green;
+}
+
+#principal {
+    color: plum;
+}
+
+#principal article > h2 {
+    color: greenyellow;
+}
+
+.articulo {
+    color: grey;
+}
+
+.articulo > h2 {
+    color: yellow;
+} 
+
+
+
