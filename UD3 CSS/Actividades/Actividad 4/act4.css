@@ -3,28 +3,32 @@ h2{
 }
 
 #principal article:first-child h2 {
-    color: blueviolet;
+    color: aquamarine;
 }
 
 #secundario article:last-child h2{
-    color: green;
+    color: aquamarine;
 }
 
 #principal {
-    color: plum;
+    color: aquamarine;
 }
 
-#principal article > h2 {
-    color: greenyellow;
+#principal h2 {
+    color: aquamarine;
 }
 
-.articulo {
-    color: grey;
+.Articulo {
+    color: aquamarine;
 }
 
-.articulo > h2 {
-    color: yellow;
+.Articulo h2 {
+    color: aquamarine;
 } 
+
+#secundario article:last-child{
+    color: blueviolet;
+}
 
 
 

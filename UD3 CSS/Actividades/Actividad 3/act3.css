@@ -1,12 +1,24 @@
+ul{
+    padding: 0;
+    margin: 0;
+}
 li {
     display: inline-block;
     padding-left: 20px;
 }
 
-li a {
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
     color: green;
     text-decoration: none;
-    display: inline;
+}
+
+ul li a span, ul li a ::after{
+    float: right;
 }
 
 li:first-child a span::after {
