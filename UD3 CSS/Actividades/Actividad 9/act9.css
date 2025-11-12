@@ -1,0 +1,56 @@
+.contenido {
+    display: grid;
+    grid-template-areas: 
+        "a a a"
+        "b c d"
+        "e e e";
+    grid-template-columns: 200px auto 300px;
+    gap: 5px;
+}
+
+body > header {
+    grid-area: a;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+body div > .barra-lateral {
+    grid-area: b;
+    background-color: #2ecc71;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 200px;
+}
+
+body div > .contenido-principal {
+    grid-area: c;
+    background-color: #ecf0f1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 200px;
+}
+
+body div > .widget-derecho {
+    grid-area: d;
+    background-color: #9b59b6;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 200px;
+}
+
+body > footer {
+    grid-area: e;
+    background-color: #34495e;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
