@@ -1,10 +1,12 @@
-.contenido {
+body{
     display: grid;
     grid-template-areas: 
         "a a a"
         "b c d"
         "e e e";
     grid-template-columns: 200px auto 300px;
+    grid-template-rows: 80px auto 50px;
+    height: 100vh;
     gap: 5px;
 }
 
@@ -13,37 +15,34 @@ body > header {
     background-color: #3498db;
     color: white;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
 }
 
-body div > .barra-lateral {
+body > .barra-lateral {
     grid-area: b;
     background-color: #2ecc71;
     color: white;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    height: 200px;
 }
 
-body div > .contenido-principal {
+body > .contenido-principal {
     grid-area: c;
     background-color: #ecf0f1;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    height: 200px;
 }
 
-body div > .widget-derecho {
+body > .widget-derecho {
     grid-area: d;
     background-color: #9b59b6;
     color: white;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    height: 200px;
 }
 
 body > footer {
@@ -51,6 +50,6 @@ body > footer {
     background-color: #34495e;
     color: white;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
 }
