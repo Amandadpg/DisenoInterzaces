@@ -1,0 +1,160 @@
+/* resetea los estilos del navegador */
+*{margin: 0; padding: 0;}
+
+
+/*Cabecera*/
+
+/*Logo*/
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Menu y redes*/
+nav {
+    float: left;
+}
+
+nav ul, #redes {  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    background-color: #bbdb88;
+    
+}
+
+nav ul li {
+    width: auto;  
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a, #redes a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Para que solo ponga de rojo rebajas al pasar*/
+nav ul li:nth-last-child(2) a{
+    color: red;
+}
+
+/*Todos los demas*/
+ul li:hover a{
+    color: black;
+    text-decoration: underline;
+}
+
+
+#redes {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 20px;
+    gap: 10px;
+}
+
+
+/*Cuerpo*/
+.banner img {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+
+
+.principal {
+    max-width: 800px;
+    color: #92968c;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    /*Ponerlo en medio*/
+}
+
+.principal p {
+    text-align: justify;
+    
+}
+
+/*Productos*/
+.productos{
+    max-width: 1400px;
+}
+
+.productos ul { 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    
+}
+
+
+.productos ul li { 
+    width: 33%;
+    text-decoration: none;
+}
+
+.productos ul li img{ 
+    width: 100%;
+}
+
+.productos ul li h3 {
+    text-align: center;
+    color: #292a27;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+.productos ul li .desc {
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.price {
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.compra {
+    float: right;
+    background-color: #bbdb88;
+
+}
+
+.compra span {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
