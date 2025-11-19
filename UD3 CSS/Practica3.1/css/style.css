@@ -1,9 +1,6 @@
 /* resetea los estilos del navegador */
 *{margin: 0; padding: 0;}
 
-
-/*Cabecera*/
-
 /*Logo*/
 #logo {
     display: flex;
@@ -16,14 +13,14 @@ nav {
     float: left;
 }
 
-nav ul, #redes {  
+nav ul {  
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
     list-style: none;
     background-color: #bbdb88;
-    
+    padding: 5px;
 }
 
 nav ul li {
@@ -112,13 +109,16 @@ div .principal {
 .productos{
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .productos ul { 
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     padding: 30px;
     align-items: center;
     list-style: none;
@@ -127,11 +127,12 @@ div .principal {
 
 .productos ul li { 
     width: 33%;
-    text-decoration: none;
+    
 }
 
 .productos ul li img{ 
     width: 100%;
+    padding: 5px;
 }
 
 .productos ul li h3 {
@@ -141,6 +142,7 @@ div .principal {
     font-size: 15px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
+    padding: 5px;
 }
 
 .productos ul li .desc {
@@ -148,6 +150,7 @@ div .principal {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    padding: 5px;
 }
 
 .price {
@@ -155,6 +158,7 @@ div .principal {
     color: black;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
 }
 
 /*Para que se quite el subrayado de los botones*/
@@ -197,14 +201,16 @@ div .principal {
 .doble {
     display: flex;
     justify-content: space-between; 
-    margin-left: 15%;  
-    margin-right: 15%;
-    gap: 30px;
     color: #92968c;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 32px;
     text-align: justify;
+    margin: 30px 15%;
+}
+
+.doble p{
+    width: 30%;
 }
 
 .doble p::first-letter{
@@ -217,7 +223,7 @@ div .principal {
 footer {
     background-color: #bbdb88;
     width: 100%;
-    
+    padding: 40px 0;
 }
 
 .footer_links {
@@ -225,12 +231,53 @@ footer {
     margin: 0 auto;          
     display: flex;           
     justify-content: space-between; 
-    padding: 40px 20px;
     
 }
 
 .column h4{
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.column ul {
+  list-style-type: none;   
+  padding: 0;       
+}
+
+.column ul li {
+    margin-bottom: 10px; 
+}
+
+.column ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column ul li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.column ul li a:visited {
+    color: grey;
+}
+
+.column ul li:last-child {
+    margin-top: 20px;
+}
+
+footer > div:last-child {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
 }
 
 
