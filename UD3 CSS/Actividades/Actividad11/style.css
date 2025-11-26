@@ -1,0 +1,25 @@
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+ul li a{
+   color: green;
+   font-size: 15px;
+   padding-right: 100px;
+}
+ul li a span{
+    float: left;
+}
+ul li a:after{
+    position: absolute;    
+    top: 16px;
+    margin-left: 3px;
+}
+ul li:first-child a::after{
+    content:"INICIAR SESIÓN";  
+}
+ul li:last-child a::after{
+    content:"FAVORITOS";
+}
+

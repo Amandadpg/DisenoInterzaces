@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding-bottom: 60px;   
+}
+
+#textoIzq {
+    background-color: #6b6b6b;
+    color: black;
+    width: 33%;
+    float: left;
+    padding: 20px;
+    border: 2px dotted black;
+}
+
+#textoDer {
+    background-color: #6b6b6b;
+    color: black;
+    width: 33%;
+    float: right;
+    padding: 20px;
+    border: 2px dotted black;
+}
+
+#div {
+    display: flex;
+    margin: 0 auto;
+    text-align: right;
+    width: 60%;
+    padding: 30px;
+}
+
+#pie-documento {
+    position: fixed;       
+    bottom: 0;                           
+    width: 100%;           
+    background-color: #6b6b6b;
+    color: black;
+    text-align: center;
+    padding: 15px;             
+}
