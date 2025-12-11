@@ -1,0 +1,89 @@
+/* Resteo estilos del navegador */
+body{
+    margin: 0;
+}
+.container{
+    max-width: 1540px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Filas */
+.row{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+/* Columnas de banners al 50% */
+.row > div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.htmlblock{
+    background-color: rgb(250, 192, 45);
+    color: black;
+    font-family: 'Times New Roman';
+}
+/* Colocación del bloque al centro verticalmente */
+.htmlblock > div{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+/* Colocación al centro del texto */
+.htmlblock .innerblock{
+    width: 100%;
+    text-align: center;
+}
+.htmlblock .innerblock div:first-child{
+    letter-spacing: 1px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.htmlblock .innerblock .title{
+    font-size: 40px;
+    padding: 20px 0;
+}
+.htmlblock a.enlace{
+    border: 1px solid #000;
+    padding: 18px 24px;
+    display: inline-block;
+    line-height: 10px;
+    transition: 0.3s;
+    margin-top: 28px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+}
+.htmlblock a.enlace:hover{
+    background-color: black;
+    color:  rgb(250, 192, 45);
+}
+
+
+
+@media (max-width: 768px){ 
+    .row{
+        flex-direction: column;
+    }
+    .row > div{
+        width: 100%;
+    }
+    .container .row:first-child .htmlblock{
+        order: 2;
+        height: 100vw;
+    }
+    .container .row:first-child div:last-child{
+        order: 1;
+    }
+    .container .row:last-child .htmlblock{
+        height: 100vw;
+    }
+}

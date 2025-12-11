@@ -27,7 +27,6 @@ body {
     grid-area: menu;
     background-color: #eee;
     padding-top: 10px;
-
 }
 
 .menu nav ul li {
@@ -42,6 +41,7 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
     color: black;
+    
 }
 
 .menu nav ul li a:hover {
@@ -90,7 +90,6 @@ body {
 
 .marcas {
     width: 750px;  
-    margin-right: 260px;
     margin: 0 auto;
 }
 
