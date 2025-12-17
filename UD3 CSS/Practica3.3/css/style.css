@@ -1,0 +1,388 @@
+/* resetea los estilos del navegador */
+*{margin: 0; padding: 0;}
+
+/*Logo*/
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Menu y redes*/
+nav {
+    float: left;
+}
+
+nav ul {  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    background-color: #bbdb88;
+    padding: 5px;
+}
+
+nav ul li {
+    width: auto;  
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a, #redes a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Para que solo ponga de rojo rebajas al pasar*/
+nav ul li:nth-last-child(2) a{
+    color: red;
+}
+
+/*Todos los demas*/
+ul li:hover a{
+    color: black;
+    text-decoration: underline;
+}
+
+
+#redes {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 20px;
+    gap: 10px;
+}
+
+
+/*Para borrar el texto y dejar solo los iconos*/
+#redes a span {
+    display: none;  
+}
+
+#redes a:nth-child(1)::after {
+    content: url("../img/facebook.png");
+    
+}
+#redes a:nth-child(2)::after {
+    content: url("../img/twitter.png");
+}
+
+#redes a:nth-child(3)::after {
+    content: url("../img/linkedin.png");
+}
+
+
+/*Cuerpo*/
+.banner img {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+
+
+div .principal p{
+    max-width: 800px;
+    color: #92968c;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    margin: 0 auto; 
+    text-align: justify;
+}
+
+
+
+/*Productos*/
+.productos{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.productos ul { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    align-items: center;
+    list-style: none;
+}
+
+
+.productos ul li { 
+    width: 33%;
+    
+}
+
+.productos ul li img{ 
+    width: 100%;
+    padding: 5px;
+}
+
+.productos ul li h3 {
+    text-align: center;
+    color: #292a27;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.productos ul li .desc {
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 5px;
+}
+
+.price {
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+/*Para que se quite el subrayado de los botones*/
+.productos ul li div a{
+    text-decoration: none;
+}
+
+.compra {
+    float: right;
+    background-color: #bbdb88;
+    list-style: none;
+    padding: 5px;
+}
+
+.compra span {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+/*Añadir el carrito de la compra*/
+.compra::after {
+    content: "\f217"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: white;
+    padding-right: 8px;
+}
+
+.compra:hover {
+    color: black;
+    background-color: #85b463;
+   
+}
+
+/*Parrafos*/
+.doble {
+    display: flex;
+    justify-content: space-between; 
+    color: #92968c;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    text-align: justify;
+    margin: 30px 15%;
+}
+
+.doble p{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.doble p::first-letter{
+    color: black;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Pie de pagina*/
+footer {
+    background-color: #bbdb88;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.footer_links {
+    max-width: 1400px;
+    margin: 0 auto;          
+    display: flex;           
+    justify-content: space-between; 
+    
+}
+
+.column h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.column ul {
+  list-style-type: none;   
+  padding: 0;       
+}
+
+.column ul li {
+    margin-bottom: 10px; 
+}
+
+.column ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column ul li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.column ul li a:visited {
+    color: grey;
+}
+
+.column ul li:last-child {
+    margin-top: 20px;
+}
+
+footer > div:last-child {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 767px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #logo {
+        width: 50%;
+        justify-content: flex-start;
+        float: none;
+    }
+
+    nav {
+        width: 100%;
+        order: 3;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    #main h1 {
+        text-align: center;
+        font-size: 28px;
+
+    }
+
+    #main .principal {
+        margin: 0 auto;
+    }
+
+    #main .principal p{
+        font-size: 15px;
+        line-height: 22px;
+        padding-top: 20px;
+        max-width: 300px;
+    }
+
+    .productos ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos ul li {
+        width: 100%;
+        padding: 20px 15px;
+    }
+    
+    .productos ul li h3, .compra span {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .doble {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .doble p {
+        max-width: 300px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 22px;
+        padding: 10px;
+    }
+
+    .doble p::first-letter {
+        color: red;
+        font-size: 24px;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
